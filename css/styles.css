@@ -792,8 +792,11 @@ p {
   cursor: pointer;
 }
 
-.modal-field-wrap:hover,
-.modal-field-wrap:focus .modal-icon {
+.modal-field-wrap:hover .modal-icon {
+  fill: var(--accent-color);
+}
+
+.modal-input:focus + .modal-icon {
   fill: var(--accent-color);
 }
 
