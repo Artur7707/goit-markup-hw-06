@@ -378,6 +378,18 @@
             </li>
           </ul>
         </div>
+        <form class="footer-email">
+          <p class="footer-title">Подпишитесь на рассылку</p>
+          <div class="footer-input-wrap">
+            <input type="email" name="email" class="footer-input" placeholder="E-mail" />
+            <button type="submit" class="hero-button input-button">
+              Подписаться
+              <svg class="input-button-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -419,13 +431,24 @@
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <div class="modal-field-wrap">
-            <input type="checkbox" name="conditions" id="conditions" />
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="conditions"
+              id="conditions"
+              class="modal-check visually-hidden"
+            />
             <label for="conditions" class="check-text"
-              >Соглашаюсь с рассылкой и принимаю
+              ><span>
+                <svg class="check-icon" widht="16" height="15">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю
               <a href="./index.html"> Условия договора </a></label
             >
           </div>
+          <button type="submit" class="hero-button modal-btn">Отправить</button>
         </form>
       </div>
     </div>
